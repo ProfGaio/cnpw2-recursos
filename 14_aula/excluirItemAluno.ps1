@@ -7,9 +7,7 @@ aws configure set region us-east-1
 $localEndpoint = "http://localhost:4566"
 
 # Excluir item
-aws dynamodb delete-item `
-    --table-name Alunos `
-    --key '{"RA": {"S": "20250001"}}' `
+aws dynamodb delete-item --table-name Alunos --key '{\"RA\": {\"S\": \"20250001\"}}' `
     --endpoint-url $localEndpoint
 
-Write-Output "🗑️ Item excluído."
+Write-Output "Item removido."

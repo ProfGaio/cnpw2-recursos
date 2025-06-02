@@ -14,5 +14,5 @@ aws dynamodb create-table `
     --provisioned-throughput ReadCapacityUnits=5,WriteCapacityUnits=5 `
     --endpoint-url $localEndpoint
 
-Write-Output "✅ Tabela criada com sucesso."
+Write-Output "Tabela criada com sucesso."
 
